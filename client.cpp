@@ -4,6 +4,7 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 
+#include <string.h> 
 #include <stdlib.h> 
 #include <math.h>
 
@@ -22,7 +23,7 @@ int main(void){
     struct sockaddr_in server_addr; 
     socketUDP = socket(AF_INET, SOCK_DGRAM, 0);
 
-    bzero((char *)&server_addr, sizeof(server_addr));
+    memset(&server_addr, 0, sizeof(server_addr)); 
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = inet_addr("192.168.0.7");
     server_addr.sin_port = htons(puerto);
