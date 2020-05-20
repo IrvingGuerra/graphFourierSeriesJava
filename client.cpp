@@ -25,7 +25,7 @@ int main(void){
 
     memset(&server_addr, 0, sizeof(server_addr)); 
     server_addr.sin_family = AF_INET;
-    server_addr.sin_addr.s_addr = inet_addr("192.168.0.7");
+    server_addr.sin_addr.s_addr = inet_addr("192.168.0.2"); //localhost
     server_addr.sin_port = htons(puerto);
 
     double fnX[629];
