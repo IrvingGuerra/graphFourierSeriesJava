@@ -28,6 +28,7 @@ $ git clone https://github.com/IrvingGuerra/graphFourierSeriesJava
 
 🚫🚫🚫🚫 ¡¡IMPORTANTE!! Siempre se debe compilar y ejecutar el servidor antes que el cliente.
 
+🚫🚫🚫🚫 NOTA: En el Archivo CLIENT poner la IP donde se este ejecutando el SERVER. (LAN FUNCTION)
 
 - Server.java
 
